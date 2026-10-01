@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+videos/*/edit/clips/
+videos/*/edit/*.wav
+videos/*/edit/*.m4a
+videos/*/edit/video.mp4
+videos/*/edit/list.txt
+videos/*/edit/render.log
+videos/*/shorts/*_video.mp4
+videos/*/shorts/*_audio.m4a
+videos/*/shorts/qa_*.jpg
+videos/*/qa/
+# finished videos are big: keep out of git unless small enough (<100 MB)
+videos/*/out/*.mp4
