@@ -59,5 +59,5 @@ videos/_template/     copy this to start a new video
 9. **Upload pack:** `videos/VNN/upload-pack.md` with titles (main + A/B test), description, chapters, Sources, HYPOTHETICAL list, disclaimer, music credits, tags, pinned comment, settings, end screen and card, plus the Shorts details. Copy V04's structure.
 
 ## Delivering
-- Finished mp4s are usually over 100 MB, so git ignores them. Deliver them with a **GitHub Release** on this repo (`gh release create` with the files attached, or the GitHub API). Alternatively, split them below 95 MB with `split -b 95m` and commit them to a branch called `deliver/VNN`, with a `JOIN.bat` that uses `copy /b`.
+- Finished mp4s are usually over 100 MB, so git ignores them. Cloud sessions **can't create GitHub Releases**. Instead, split each file below 95 MB with `split -b 95m -d` and commit the parts to a branch called `deliver/VNN`, along with a `JOIN.bat` that rebuilds it with `copy /b part00+part01+... name.mp4`. Files under 30 MB can also be sent straight into the chat.
 - Commit every source file (script, VO, words.json, timeline, shots, shorts, upload pack) to a branch and open a PR so Fin can review it.
