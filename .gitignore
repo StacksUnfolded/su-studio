@@ -16,3 +16,8 @@ remotion/node_modules/
 remotion/out/
 remotion/qa/*.jpg
 remotion/public/*.wav
+videos/*/vo/*.wav
+videos/*/out/*.log
+videos/*/out/*.sud
+remotion/qa/v05/
+remotion/qa/*.jpg

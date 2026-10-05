@@ -2,11 +2,16 @@ import json,re
 import os
 from paths import VIDEO
 from pocketsphinx import Decoder
-from timeline import offs
+try:
+    _tj=os.path.join(VIDEO,'timeline.json')
+    _rj=os.path.join(os.path.dirname(__file__),'..','remotion','src',os.path.basename(VIDEO.rstrip('/')).lower(),'timeline.json')
+    _j=next(f for f in (_tj,_rj) if os.path.exists(f)); offs=json.load(open(_j))['offs']
+except StopIteration:
+    from timeline import offs
 from paths import VO as V
 words=json.load(open(V+'words.json'))
 d=Decoder(samprate=16000)
-REP=[('2025','twenty twenty five'),('IRS','i r s'),('LLC','l l c'),('US','u s')]
+REP=[('CFPB','c f p b'),('TV','t v'),('APR','a p r'),('BNPL','b n p l'),('2025','twenty twenty five'),('IRS','i r s'),('LLC','l l c'),('US','u s')]
 def ntok(w):
     t=re.sub(r'[^A-Za-z0-9\'-]','',w)
     for a,b in REP:
@@ -14,9 +19,16 @@ def ntok(w):
     t=t.replace('-',' ')
     return [x for x in re.findall(r"[a-zA-Z']+",t.lower()) if d.lookup_word(x)]
 cues=[]
-for si in range(14):
+for si in range(len(words)):
     txt=open(V+f'sec{si:02d}.txt').read(); ws=words[si]; k=0; timed=[]
-    for w in txt.split():
+    raw=txt.split()
+    for i in range(1,len(raw)):  # undo VO emphasis caps (e.g. a "Free" Payment) in captions
+        a,b=raw[i-1],raw[i]
+        lowq=b.startswith('"') and a.lower() in ('the','a','twelve')
+        after=a.endswith('"') and not re.search(r'[.?!…:]"$',a) and b[:1].isupper() and b not in ('I',)
+        if lowq: raw[i]='"'+b[1].lower()+b[2:]
+        elif after: raw[i]=b[0].lower()+b[1:]
+    for w in raw:
         n=len(ntok(w))
         if n==0 or k>=len(ws): timed.append([w,None,None]); continue
         s=ws[k][1]; e=ws[min(k+n,len(ws))-1][2]; k+=n; timed.append([w,offs[si]+s,offs[si]+e])
