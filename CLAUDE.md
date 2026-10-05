@@ -2,6 +2,12 @@
 
 This repo is the production kit for **Stacks Unfolded**, a faceless finance YouTube channel made with stickman-style animation. It is owned by Fin (UK). It contains the edit engine, the reusable asset library and one folder per video. V04 is the reference build.
 
+## Engine
+**Remotion (`remotion/`) is the default engine from V05 on.** Fin approved it on 5 Oct 2026, after the V04 hook pilot. The Python engine (`engine/`) is kept for reference and for re-renders of V01–V04. Port its layer types into `remotion/src/Layers.tsx` as they're needed.
+- Remotion renders with the `angle` GL backend. `swangle` is about 5x slower. Expect about 0.35 s per frame on 2 cores.
+- Characters are anchored by their real foot line (`foot` in the data JSON). Many library PNGs have invisible padding under the feet, so never anchor to the image's bottom edge.
+- Each video can have its own visual style. Don't assume V04's look carries over, and check the video's script.md and style notes first.
+
 ## First thing in every session
 ```bash
 ./su.sh setup                     # ffmpeg, DejaVu font, pillow numpy opencv pocketsphinx
