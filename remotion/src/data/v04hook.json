@@ -1,0 +1,928 @@
+{
+"end": 60.0,
+"shots": [
+{
+"t": 0,
+"plate": "L03B",
+"actors": [
+{
+"c": "P22",
+"x": 820,
+"y": 1030,
+"h": 720
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.45,
+0.55
+],
+"tr": "cut",
+"fx": "night"
+},
+{
+"t": 1.97,
+"plate": "L03B",
+"actors": [
+{
+"c": "P21",
+"x": 700,
+"y": 1030,
+"h": 720
+}
+],
+"props": [],
+"motion": "punch",
+"focus": [
+0.85,
+0.6
+],
+"tr": "zoom",
+"fx": "night"
+},
+{
+"t": 3.97,
+"plate": "L03B",
+"actors": [
+{
+"c": "P13",
+"x": 760,
+"y": 1030,
+"h": 760
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.4,
+0.4
+],
+"tr": "cut",
+"fx": "night"
+},
+{
+"t": 6.81,
+"plate": "L03B",
+"actors": [
+{
+"c": "P08",
+"x": 640,
+"y": 1030,
+"h": 720
+},
+{
+"c": "C01",
+"x": 1480,
+"y": 1030,
+"h": 700,
+"enter": "R",
+"t": 7.96
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.6,
+0.5
+],
+"tr": "cut",
+"fx": "night"
+},
+{
+"t": 10.31,
+"plate": "L03B",
+"actors": [
+{
+"c": "P08",
+"x": 640,
+"y": 1030,
+"h": 720
+},
+{
+"c": "C01",
+"x": 1480,
+"y": 1030,
+"h": 700
+}
+],
+"props": [],
+"motion": "out",
+"focus": [
+0.5,
+0.5
+],
+"tr": "cut",
+"fx": "rewind",
+"nohud": true
+},
+{
+"t": 11.66,
+"plate": "L01",
+"actors": [
+{
+"c": "P01",
+"x": 960,
+"y": 1010,
+"h": 760
+}
+],
+"props": [],
+"motion": "out",
+"focus": [
+0.5,
+0.5
+],
+"tr": "cut",
+"fx": "rewind",
+"nohud": true
+},
+{
+"t": 15.64,
+"plate": "L01",
+"actors": [
+{
+"c": "P01",
+"x": 960,
+"y": 1010,
+"h": 760
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.5
+],
+"tr": "flash"
+},
+{
+"t": 16.68,
+"plate": "L01",
+"actors": [
+{
+"c": "P07",
+"x": 960,
+"y": 1010,
+"h": 760
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.45
+],
+"tr": "cut"
+},
+{
+"t": 18.86,
+"plate": "L01",
+"actors": [
+{
+"c": "P09",
+"x": 960,
+"y": 1010,
+"h": 760
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.4
+],
+"tr": "zoom"
+},
+{
+"t": 22.05,
+"plate": "L01",
+"actors": [
+{
+"c": "P09",
+"x": 960,
+"y": 1010,
+"h": 760
+}
+],
+"props": [
+{
+"c": "parcel",
+"x": 460,
+"y": 520,
+"h": 230,
+"t": 22.05
+},
+{
+"c": "laptop",
+"x": 1460,
+"y": 520,
+"h": 230,
+"t": 23.34
+}
+],
+"motion": "in",
+"focus": [
+0.5,
+0.45
+],
+"tr": "cut"
+},
+{
+"t": 25.09,
+"plate": "G:gold",
+"actors": [
+{
+"c": "P10",
+"x": 1740,
+"y": 1040,
+"h": 560,
+"enter": "pop"
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.5
+],
+"tr": "whip",
+"nohud": true
+},
+{
+"t": 29.75,
+"plate": "G:gold",
+"actors": [
+{
+"c": "P07",
+"x": 1740,
+"y": 1040,
+"h": 560
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.5
+],
+"tr": "cut",
+"nohud": true
+},
+{
+"t": 32.25,
+"plate": "G:navy",
+"actors": [
+{
+"c": "P15",
+"x": 960,
+"y": 1010,
+"h": 560,
+"enter": "drop"
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.6
+],
+"tr": "flash",
+"nohud": true
+},
+{
+"t": 37.97,
+"plate": "G:navy",
+"actors": [
+{
+"c": "P22",
+"x": 960,
+"y": 1010,
+"h": 640
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.4
+],
+"tr": "cut"
+},
+{
+"t": 40.8,
+"plate": "G:teal",
+"actors": [
+{
+"c": "P09",
+"x": 1500,
+"y": 1040,
+"h": 640
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.5
+],
+"tr": "whip",
+"nohud": true
+},
+{
+"t": 44.44,
+"plate": "G:teal",
+"actors": [
+{
+"c": "P05",
+"x": 960,
+"y": 1040,
+"h": 700,
+"enter": "pop"
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.4
+],
+"tr": "cut",
+"nohud": true
+},
+{
+"t": 45.97,
+"plate": "G:teal",
+"actors": [
+{
+"c": "P23",
+"x": 1700,
+"y": 1040,
+"h": 560
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.5
+],
+"tr": "cut",
+"nohud": true
+},
+{
+"t": 49.05,
+"plate": "L01",
+"actors": [
+{
+"c": "P16",
+"x": 960,
+"y": 1010,
+"h": 740,
+"exit": [
+49.96,
+"R"
+]
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.5,
+0.5
+],
+"tr": "whip"
+},
+{
+"t": 51.13,
+"motion": "title",
+"focus": [
+0.5,
+0.5
+],
+"tr": "cut"
+},
+{
+"t": 53.53,
+"motion": "card",
+"ch": 1,
+"focus": [
+0.5,
+0.5
+],
+"tr": "cut"
+},
+{
+"t": 55.43,
+"plate": "L02",
+"actors": [
+{
+"c": "P13",
+"x": 1150,
+"y": 1000,
+"h": 720
+}
+],
+"props": [],
+"motion": "in",
+"focus": [
+0.6,
+0.5
+],
+"tr": "cut",
+"fx": "night"
+}
+],
+"layers": [
+{
+"kind": "clock",
+"t0": 0.2,
+"t1": 1.97,
+"x": 1640,
+"y": 250,
+"r": 120,
+"h0": 2,
+"m0": 0
+},
+{
+"kind": "bigtext",
+"t0": 0.3,
+"t1": 1.97,
+"text": "2:00 AM",
+"y": 860,
+"col": [
+255,
+255,
+255
+]
+},
+{
+"kind": "tag",
+"t0": 2.65,
+"t1": 3.97,
+"text": "BOXES. EVERYWHERE.",
+"x": 1350,
+"y": 240,
+"col": [
+230,
+199,
+119
+]
+},
+{
+"kind": "notif",
+"t0": 4.67,
+"t1": 6.81,
+"title": "Messages",
+"body": "You have 400 unread messages",
+"right": "400",
+"col": [
+200,
+50,
+60
+]
+},
+{
+"kind": "tag",
+"t0": 8.16,
+"t1": 10.31,
+"text": "THE TAX OFFICE",
+"x": 1480,
+"y": 240,
+"col": [
+200,
+50,
+60
+]
+},
+{
+"kind": "tag",
+"t0": 15.94,
+"t1": 16.68,
+"text": "THE DAY JOB",
+"x": 960,
+"y": 190,
+"col": [
+230,
+199,
+119
+]
+},
+{
+"kind": "bigtext",
+"t0": 20.85,
+"t1": 25.09,
+"text": "THE IDEA",
+"y": 820,
+"col": [
+230,
+199,
+119
+]
+},
+{
+"kind": "meterbig",
+"t0": 25.09,
+"t1": 32.25,
+"frm": 0,
+"to": 1000000,
+"ta": 27.01,
+"tb": 28.4,
+"snap": 29.75
+},
+{
+"kind": "burst",
+"t0": 28.3,
+"t1": 29.75
+},
+{
+"kind": "top",
+"t0": 25.09,
+"t1": 27.01,
+"text": "By the end of this video\u2026"
+},
+{
+"kind": "bigtext",
+"t0": 32.25,
+"t1": 34.06,
+"text": "ALMOST EVERYONE QUITS",
+"y": 230,
+"col": [
+255,
+255,
+255
+]
+},
+{
+"kind": "top",
+"t0": 34.06,
+"t1": 35.4,
+"text": "Not because they fail."
+},
+{
+"kind": "top",
+"t0": 35.4,
+"t1": 37.97,
+"text": "Not because the idea was bad."
+},
+{
+"kind": "bigtext",
+"t0": 38.89,
+"t1": 40.8,
+"text": "SOMETHING BORING",
+"y": 230,
+"col": [
+230,
+199,
+119
+]
+},
+{
+"kind": "bigtext",
+"t0": 42.1,
+"t1": 44.44,
+"text": "WHICH LEVEL",
+"y": 380,
+"col": [
+255,
+255,
+255
+]
+},
+{
+"kind": "bigtext",
+"t0": 43.05,
+"t1": 44.44,
+"text": "KILLS THE MOST?",
+"y": 560,
+"col": [
+200,
+50,
+60
+]
+},
+{
+"kind": "top",
+"t0": 44.44,
+"t1": 45.97,
+"text": "It's not the one you think."
+},
+{
+"kind": "bigtext",
+"t0": 45.97,
+"t1": 49.05,
+"text": "+ THE MOST",
+"y": 380,
+"col": [
+255,
+255,
+255
+]
+},
+{
+"kind": "bigtext",
+"t0": 46.43,
+"t1": 49.05,
+"text": "IMPORTANT LEVEL",
+"y": 560,
+"col": [
+230,
+199,
+119
+]
+},
+{
+"kind": "clock",
+"t0": 49.05,
+"t1": 51.06,
+"x": 1620,
+"y": 260,
+"r": 110,
+"h0": 16,
+"m0": 59,
+"h1": 17,
+"m1": 0,
+"ta": 49.349999999999994,
+"tb": 49.65
+}
+],
+"sfx": [
+[
+"tick",
+0.1
+],
+[
+"chime",
+0.4
+],
+[
+"whoosh",
+1.92
+],
+[
+"pop",
+2.65
+],
+[
+"phone",
+4.57
+],
+[
+"door",
+6.81
+],
+[
+"gavel",
+8.26
+],
+[
+"scratch",
+10.21
+],
+[
+"riser",
+13.99
+],
+[
+"whoosh",
+15.59
+],
+[
+"pop",
+15.940000000000001
+],
+[
+"trombone",
+17.9
+],
+[
+"thump",
+20.85
+],
+[
+"pop",
+22.05
+],
+[
+"pop",
+23.34
+],
+[
+"whoosh",
+25.04
+],
+[
+"riser",
+26.610000000000003
+],
+[
+"register",
+28.3
+],
+[
+"wow",
+28.5
+],
+[
+"scratch",
+29.7
+],
+[
+"wrong",
+30.05
+],
+[
+"thump",
+32.25
+],
+[
+"pop",
+38.89
+],
+[
+"whoosh",
+40.75
+],
+[
+"pop",
+42.1
+],
+[
+"thump",
+43.05
+],
+[
+"pop",
+45.97
+],
+[
+"ding",
+46.43
+],
+[
+"whoosh",
+49.0
+],
+[
+"chime",
+49.599999999999994
+],
+[
+"whoosh",
+49.96
+],
+[
+"riser",
+50.034082
+],
+[
+"thump",
+51.384082
+],
+[
+"register",
+51.834082
+],
+[
+"whoosh",
+53.334081999999995
+],
+[
+"whoosh",
+53.484082
+],
+[
+"thump",
+53.634082
+],
+[
+"ding",
+53.984082
+],
+[
+"crickets",
+55.634
+]
+],
+"dims": {
+"P10": {
+"path": "poses/P10.png",
+"ar": 0.6280642434488588,
+"foot": 0.9949
+},
+"P07": {
+"path": "poses/P07.png",
+"ar": 0.6791784702549575,
+"foot": 0.881
+},
+"P13": {
+"path": "poses/P13.png",
+"ar": 0.4257659073055774,
+"foot": 0.9945
+},
+"P04": {
+"path": "poses/P04.png",
+"ar": 0.6071428571428571,
+"foot": 0.8899
+},
+"parcel": {
+"path": "props/parcel.png",
+"ar": 1.1592920353982301,
+"foot": 0.9823
+},
+"P09": {
+"path": "poses/P09.png",
+"ar": 0.5310537334263782,
+"foot": 0.8918
+},
+"P23": {
+"path": "poses/P23.png",
+"ar": 0.7057122198120029,
+"foot": 0.8388
+},
+"P08": {
+"path": "poses/P08.png",
+"ar": 0.5210780926053905,
+"foot": 0.9254
+},
+"P05": {
+"path": "poses/P05.png",
+"ar": 0.5614525139664804,
+"foot": 0.8848
+},
+"P16": {
+"path": "poses/P16.png",
+"ar": 0.5737473535638673,
+"foot": 0.8419
+},
+"P21": {
+"path": "poses/P21.png",
+"ar": 0.4161023325808879,
+"foot": 0.9947
+},
+"cash": {
+"path": "props/cash.png",
+"ar": 1.6449511400651466,
+"foot": 0.9805
+},
+"P15": {
+"path": "poses/P15.png",
+"ar": 0.6892430278884463,
+"foot": 0.7912
+},
+"C01": {
+"path": "cast/C01.png",
+"ar": 0.5957746478873239,
+"foot": 0.8746
+},
+"laptop": {
+"path": "props/laptop.png",
+"ar": 1.2642045454545454,
+"foot": 0.9801
+},
+"P01": {
+"path": "poses/P01.png",
+"ar": 0.529331514324693,
+"foot": 0.9468
+},
+"P22": {
+"path": "poses/P22.png",
+"ar": 0.5612489991993594,
+"foot": 0.9944
+},
+"coins": {
+"path": "props/coins.png",
+"ar": 0.9228187919463087,
+"foot": 0.9765
+}
+},
+"cards": [
+[
+1,
+53.534082
+]
+],
+"card": 1.9,
+"titleT": 51.134082,
+"title": 2.4,
+"hours": [
+[
+0,
+30
+]
+],
+"rewindHud": 15.09,
+"sub": {
+"1": "THE IDEA",
+"2": "THE FIRST SALE",
+"3": "THE MEDIAN",
+"4": "THE TAXMAN",
+"5": "THE TIME WALL",
+"6": "THE PAPERWORK",
+"7": "LIFESTYLE CREEP",
+"8": "THE COPYCATS",
+"9": "THE BIG DECISION",
+"10": "YOU'RE THE BOSS NOW",
+"11": "THE REAL MILLION"
+}
+}
