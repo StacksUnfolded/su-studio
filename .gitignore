@@ -12,3 +12,7 @@ videos/*/shorts/qa_*.jpg
 videos/*/qa/
 # finished videos are big: keep out of git unless small enough (<100 MB)
 videos/*/out/*.mp4
+remotion/node_modules/
+remotion/out/
+remotion/qa/*.jpg
+remotion/public/*.wav
