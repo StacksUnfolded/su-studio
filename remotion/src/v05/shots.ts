@@ -137,7 +137,7 @@ for (const k of T.cards) { S.push({t: k.t, kind: 'card', c: k, nohud: true}); SF
   const wk = [math + 0.6, math + 0.8, math + 1.0, math + 1.2];
   lay('weeks', math, c(s, "that's the quiet cost"), {plans: [{weeks: [0, 2, 4, 6], amt: 15, col: '#7c4dff', ts: wk}, {weeks: [2, 4, 6, 8], amt: 30, col: '#ff8a00', ts: wk.map((x) => x + c(s, 'eight payments') - math - 0.6)}],
     sums: [[0, 15, c(s, "some weeks it's fifteen")], [2, 45, c(s, 'forty five')], [4, 45, c(s, 'forty five') + 0.15], [6, 45, c(s, 'forty five') + 0.3], [8, 30, c(s, 'forty five') + 0.45]], note: '2 plans = 8 payments on 4 different days · HYPOTHETICAL'});
-  sticker(c(s, 'picked for you'), c(s, "that's the quiet cost"), 'PICKED FOR YOU', 1400, 900, {col: UI.red, size: 54});
+  sticker(c(s, 'picked for you'), c(s, "that's the quiet cost"), 'PICKED FOR YOU', 1100, 900, {col: UI.red, size: 54});
   shot(c(s, "that's the quiet cost"), 'L04', [A('P09', 620, 1010, 740)], {tr: 'whip', sfx: 'whoosh'});
   label(c(s, "it's not the interest"), c(s, 'you still feel fine'), 'NOT THE INTEREST...', {x: 1250, y: 330, size: 100, col: '#fff'});
   label(c(s, 'spoken for'), c(s, 'you still feel fine'), 'YOUR NEXT PAYCHECKS', {x: 1250, y: 520, size: 110, col: 'rgb(255,90,100)'});
@@ -175,8 +175,10 @@ for (const k of T.cards) { S.push({t: k.t, kind: 'card', c: k, nohud: true}); SF
   shot(c(s, 'none of that'), 'G:teal', [A('P02', 1550, 1050, 620)], {tr: 'whip', sfx: 'whoosh'});
   label(c(s, 'none of that'), c(s, 'and it works best'), 'NOT AN ACCIDENT', {x: 760, y: 400, size: 140, col: 'rgb(255,90,100)'});
   label(c(s, 'the yes faster'), c(s, 'and it works best'), 'YES > THINKING', {x: 760, y: 620, size: 120});
-  shot(c(s, 'and it works best'), 'G:navy', [A('P09', 290, 1050, 560)], {tr: 'whip', sfx: 'whoosh'});
-  lay('bars', c(s, 'and it works best') + 0.3, c(s, 'four plans now'), {title: 'Used BNPL in the past year', items: [['All adults', 16, 'rgb(230,199,119)', c(s, 'sixteen percent')], ['$25K to $50K', 23, 'rgb(230,80,90)', c(s, 'twenty five to fifty')], ['$100K+', 12, 'rgb(120,190,255)', c(s, 'over a hundred thousand')]], max: 25});
+  shot(c(s, 'and it works best'), 'G:navy', [A('P09', 1720, 1000, 560)], {tr: 'whip', sfx: 'whoosh'});
+  label(c(s, 'and it works best') + 0.1, c(s, 'sixteen percent') - 0.7, 'IT WORKS BEST ON PEOPLE', {x: 760, y: 420, size: 110, col: '#fff'});
+  label(c(s, 'who can least'), c(s, 'sixteen percent') - 0.7, 'WHO CAN LEAST AFFORD IT', {x: 760, y: 580, size: 120, col: 'rgb(255,90,100)'}); sfx('thump', c(s, 'who can least'), 0.4);
+  lay('bars', c(s, 'sixteen percent') - 0.7, c(s, 'four plans now'), {title: 'Used BNPL in the past year', items: [['All adults', 16, 'rgb(230,199,119)', c(s, 'sixteen percent')], ['$25K to $50K', 23, 'rgb(230,80,90)', c(s, 'twenty five to fifty')], ['$100K+', 12, 'rgb(120,190,255)', c(s, 'over a hundred thousand')]], max: 25});
   source(c(s, "the fed's"), c(s, 'four plans now'), 'Federal Reserve, Economic Well-Being of U.S. Households in 2025 (May 2026)');
   shot(c(s, 'four plans now'), 'L02', [A('P13', 520, 1000, 740)], {fx: 'night', tr: 'whip', sfx: 'whoosh'});
   phone(c(s, 'four plans now'), c(s, "that's the trick"), [{t: 0, kind: 'plans', clock: '1:20', plans: [plan('sneakers', {paid: 2, due: 'FRI'}), plan('jacket', {paid: 1, due: 'FRI'}), plan('headphones', {paid: 1, due: 'TUE'}), plan('chair', {paid: 1, due: 'WED'})]}], {x: 1450});
@@ -398,7 +400,7 @@ for (const k of T.cards) { S.push({t: k.t, kind: 'card', c: k, nohud: true}); SF
   const gone = (i: number) => close + 0.4 + i * 0.22;
   phone(close, evil, [{t: 0, kind: 'plans', clock: '7:40', title: 'Plans left', plans: ALL12.map((kk, i) => plan(kk, {paid: 3, due: 'paid', tGone: gone(i)})), apps: 3}], {x: 1350, h: 980});
   ALL12.forEach((_, i) => { sfx('ding', gone(i), 0.25); trk(gone(i) + 0.1, st(11 - i, Math.max(0, Math.round(2340 * (11 - i) / 12)), i < 8 ? 3 : 1, (11 - i) ? 'FRI' : undefined, undefined, false)); });
-  label(gone(11) + 0.3, evil, '0 PLANS', {x: 560, y: 260, size: 170, col: UI.green}); sfx('wow', gone(11) + 0.3, 0.35);
+  label(gone(11) + 0.3, evil, 'ZERO PLANS', {x: 680, y: 330, size: 150, col: UI.green}); sfx('wow', gone(11) + 0.3, 0.35);
   shot(evil, 'L03', [A('P02', 560, 1010, 740)], {tr: 'whip', sfx: 'whoosh'});
   sticker(c(s, 'free little loan'), c(s, "it's the stack"), 'A FREE LITTLE LOAN', 1350, 360, {col: UI.green, size: 64});
   shot(c(s, "it's the stack"), 'L03', [A('P05', 560, 1010, 740)], {motion: 'punch', focus: [0.3, 0.4]});
