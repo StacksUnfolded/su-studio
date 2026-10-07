@@ -1,12 +1,14 @@
 import json,re,subprocess
 from pocketsphinx import Decoder
-REP=[('2025','twenty twenty five'),('IRS','i r s'),('LLC','l l c'),('US','u s'),('ninety-nine K','ninety nine k'),('Gen Z','gen z')]
+REP=[('CFPB','c f p b'),('TV','t v'),('APR','a p r'),('BNPL','b n p l'),('2025','twenty twenty five'),('IRS','i r s'),('LLC','l l c'),('US','u s'),('ninety-nine K','ninety nine k'),('Gen Z','gen z')]
 def norm(t):
     for a,b in REP: t=re.sub(r'\b'+re.escape(a)+r'\b',b,t)
     t=t.replace('-',' ').replace('…',' ')
     return re.findall(r"[a-zA-Z']+",t.lower())
 res=[]
-for i in range(14):
+import glob
+N=len(glob.glob('sec*.txt'))
+for i in range(N):
     txt=open(f'sec{i:02d}.txt').read()
     raw=subprocess.run(['ffmpeg','-v','error','-i',f'sec{i:02d}.mp3','-ar','16000','-ac','1','-f','s16le','-'],capture_output=True).stdout
     d=Decoder(samprate=16000,bestpath=False)
