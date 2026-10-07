@@ -9,6 +9,7 @@ echo Joining {base} ...
 copy /b {"+".join(parts)} "{stem}.joined.sud" >nul
 powershell -NoProfile -Command "$b=[IO.File]::ReadAllBytes('%CD%\\{stem}.joined.sud'); $f=[IO.File]::Create('%CD%\\{base}'); $f.Write($b,8,$b.Length-8); $f.Close()"
 if exist "{base}" (del "{stem}.joined.sud" & del {" ".join(parts)} & echo Done: {base}) else (echo Something went wrong - parts kept.)
+pause
 '''
 open(os.path.join(dst_dir,f'JOIN-{stem}.bat'),'w',newline='\r\n').write(bat)
 print(parts, len(data))
