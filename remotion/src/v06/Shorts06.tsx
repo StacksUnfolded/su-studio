@@ -28,11 +28,15 @@ const Bg: React.FC<{t: number; plate: string; fx?: number; z0?: number; night?: 
 };
 const Captions: React.FC<{t: number; disp: [string, number, number][]; y?: number}> = ({t, disp, y = 330}) => {
   const groups: [string, number, number][][] = []; let cur: any[] = [];
-  for (const w of disp) { cur.push(w); if (cur.length >= 3 || /[.?!,…:]$/.test(w[0])) { groups.push(cur); cur = []; } }
+  const len = (g: any[]) => g.reduce((a, w) => a + w[0].length + 1, 0);
+  for (const w of disp) {
+    if (cur.length && len(cur) + w[0].length > 18) { groups.push(cur); cur = []; }   // keep each caption line inside the 1080 frame
+    cur.push(w); if (cur.length >= 3 || /[.?!,…:]$/.test(w[0])) { groups.push(cur); cur = []; }
+  }
   if (cur.length) groups.push(cur);
   const gi = groups.findIndex((g, i) => g[0][1] <= t && t < (i + 1 < groups.length ? groups[i + 1][0][1] : g[g.length - 1][2] + 0.4)); if (gi < 0) return null;
-  const g = groups[gi]; const s = popS(t, g[0][1]);
-  return <At x={540} y={y} s={clamp(s, 0, 1.15)}>
+  const g = groups[gi]; const fit = Math.min(1, 940 / (len(g) * 52)); const s = popS(t, g[0][1]) * fit;
+  return <At x={540} y={y} s={clamp(s, 0, 1.15 * fit)}>
     <div style={{display: 'flex', gap: 22, flexWrap: 'nowrap'}}>{g.map(([w, s0, e], k) => <ST key={k} text={w.toUpperCase().replace(/"/g, '')} font={FA} size={96} color={s0 <= t && t < e + 0.08 ? GOLD : WHITE} sw={11} />)}</div>
   </At>;
 };
