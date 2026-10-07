@@ -22,6 +22,7 @@ Look at both stills (Read the jpgs). If they look right, the engine works.
 - **Invented examples** get the HYPOTHETICAL stamp (`hypo(t0,t1)`) and are listed in the description.
 - **Spelling:** American spelling in narration. Fin's own notes are in UK English.
 - **Length:** about 15 minutes for the long video, built in an "Every Level" or story structure with retention hooks every 60–90 s. Make dedicated Shorts written from scratch, never cuts of the long video, at 30–45 s with a loop ending.
+- **SFX:** never use the `wrong` (incorrect-answer buzzer) sound. Fin banned it on 7 Oct 2026. For a fail beat use `thump`, `stamp`, `scratch` or `trombone` instead.
 - **Voice:** ElevenLabs **Eleven v4**, voice `2nICQbZAqZdBaP1l1aiw`. Do **not** use ElevenLabs music or SFX. Use only `library/sfx` and `library/music`.
 - **Images:** rich "first style" at 1920×1080 or larger. Check every new image for clipping, anatomy, logos and text. Prefer the library: V04 needed zero new images.
 - **Thumbnails:** MrBeast or Odd1sOut style. Show what the video is about at a glance. Text must never cover the character.
