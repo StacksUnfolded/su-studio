@@ -76,7 +76,7 @@ const after = (sec: number) => { const k = card(sec); return k.t + k.dur; };
   shot(here, 'G:navy', [], {tr: 'whip', sfx: 'whoosh', hud: true});
   label(here + 0.1, c(s, 'the platform is making'), 'NOBODY TELLS YOU THIS', {x: 1150, y: 470, size: 110, col: '#fff'});
   lay('chain', c(s, 'the platform is making'), alone, {y: 420, nodes: [[c(s, 'the platform is making'), 'YOU', 'P13', '#5aa9ff'], [c(s, 'keeps people scrolling'), 'THE APP', 'phone', UI.pink], [c(s, 'an ad they can sell'), 'ADVERTISERS', 'briefcase', UI.gold]],
-    links: [[c(s, 'every video you post'), 'free videos', '#5aa9ff'], [c(s, 'an ad they can sell') + 0.3, 'pay for ads', UI.gold]], back: [c(s, "you're working for free") - 0.3, 'YOU GET: $0']});
+    links: [[c(s, 'every video you post'), 'free videos', '#5aa9ff'], [c(s, 'an ad they can sell') + 0.3, 'sells ads', UI.gold]], back: [c(s, "you're working for free") - 0.3, 'YOU GET: $0']});
   label(c(s, "you're working for free") + 0.6, alone, "YOU'RE WORKING FOR FREE", {y: 150, size: 90, col: UI.pink});
   shot(alone, 'L02', [A('P09', 1400, 1000, 740)], {fx: 'night', tr: 'whip', sfx: 'whoosh'});
   phone(alone, quit, [{t: 0, kind: 'grid', handle: '@everyone', posts: 999, followers: 0, counts: Array.from({length: 24}, (_, i) => (i * 37) % 90 + 3), t0: alone}], {x: 520, rot: 4});
