@@ -23,6 +23,7 @@ Look at both stills (Read the jpgs). If they look right, the engine works.
 - **Spelling:** American spelling in narration. Fin's own notes are in UK English.
 - **Length:** about 15 minutes for the long video, built in an "Every Level" or story structure with retention hooks every 60–90 s. Make dedicated Shorts written from scratch, never cuts of the long video, at 30–45 s with a loop ending.
 - **SFX:** never use the `wrong` (incorrect-answer buzzer) sound. Fin banned it on 7 Oct 2026. For a fail beat use `thump`, `stamp`, `scratch` or `trombone` instead.
+- **SFX loudness:** Fin said the effects were too loud (7 Oct 2026). Use the loudness-matched set in `remotion/public/sfx06` and premix the audio with `videos/V06/mix.py` (and `shorts/mix_shorts.py`). These scripts measure every effect against the voice and keep it at least 8 dB under it, or under -26 dBFS in pauses. Don't play raw SFX at fixed volumes in Remotion.
 - **Voice:** ElevenLabs **Eleven v4**, voice `2nICQbZAqZdBaP1l1aiw`. Do **not** use ElevenLabs music or SFX. Use only `library/sfx` and `library/music`.
 - **Images:** rich "first style" at 1920×1080 or larger. Check every new image for clipping, anatomy, logos and text. Prefer the library: V04 needed zero new images.
 - **Thumbnails:** MrBeast or Odd1sOut style. Show what the video is about at a glance. Text must never cover the character.

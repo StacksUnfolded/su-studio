@@ -436,37 +436,31 @@ And if you want to see how that famous-but-broke lifestyle gets paid for, watch 
 
 ## SHORTS (dedicated, written from scratch, 30–45 s, loop ending)
 
-### Short A: "What 1 million views actually pays"
-*[9:16. Phone with a view counter rolling up to 1,000,000. Title pill: "1M VIEWS = $???".]*
+Final voiced versions (Eleven v4):
 
+### Short A: "What 1 million views actually pays" (33 s)
 You got a million views. How much did you make?
 
 On YouTube, you only keep fifty-five percent of the ad money on regular videos, and forty-five percent of your share on Shorts. The platform keeps the rest.
 
-So a million views on a Short might pay… a few hundred dollars. Same views on a long video could pay a few thousand. Same views, a completely different check.
-
-*[HYPOTHETICAL stamp on both payouts. Source pill: YouTube Help, partner earnings overview.]*
+So a million views on a Short might pay… tens to a few hundred dollars. The same views on a long video could pay thousands. Same views. A completely different check.
 
 That's why creators who look famous are often broke, and why the smart ones sell their own stuff.
 
-So next time you see a million views, ask yourself…
+So next time you see a video with a million views, ask the real question…
 
-*[Loop back to "You got a million views."]*
+*[Loops back to "You got a million views."]*
 
-### Short B: "Free stuff isn't free"
-*[9:16. A parcel thumps onto the bed. Title pill: "THE FREE HOODIE TRAP".]*
+### Short B: "The free hoodie trap" (29 s)
+A brand sends you a free hoodie. Congrats… you might owe taxes on it.
 
-A brand just sent you a free hoodie. Congrats… you might owe taxes on it.
-
-In the U.S., products you get in exchange for promotion generally count as income, at what they'd cost to buy. Post about it, and the FTC says you have to disclose it, right there in the post. Not in your bio.
-
-*[Source pills: FTC "Disclosures 101"; IRS.]*
+In the U.S., products you get in exchange for promotion generally count as income, at what they'd cost to buy. And if you post about it, the FTC says you have to disclose it, right there in the post. Not in your bio.
 
 Ten free hoodies a month? That's real income on paper… and not one dollar in your bank.
 
-So before you say yes to "can we send you something"... remember: a brand just sent you a free hoodie.
+So the next time a DM says "can we send you something?", remember what really happens when…
 
-*[Loop.]*
+*[Loops back to "…a brand sends you a free hoodie."]*
 
 ---
 
