@@ -28,3 +28,4 @@ videos/*/out/*.mbtree
 videos/*/out/ffmpeg2pass*
 remotion/qa/v06/
 remotion/qa/_*.js
+videos/*/out/*.txt
