@@ -43,9 +43,15 @@ All cut-outs are transparent PNGs. Plates are 1920×1080. The style source is th
 | C06 | Accountant: cardigan, calculator |
 | C07 | Boss: bald, beard, tie, mug |
 | C08 | Office worker: hair bun, clapping |
+| C09 | Marco: curly hair, moustache, chef's apron (V07) |
+| C10 | Estate agent: blond side parting, teal blazer, salesman grin (V07) |
+| C11 | Scammer: shiny silver suit, purple tie, rings, offering a handshake (V07) |
+| D01–D04 | Dez, the rival lottery winner (backwards red cap, gold chain, red-and-black varsity jacket): D01 neutral, D02 cheering with a ticket, D03 horrified, D04 slumped with an empty wallet (V07) |
 
 ## Props (`props/`)
 coins, cash, moneybag, piggybank, card, receipts, briefcase, goldbar, wallet, calculator, coinjar, plant, phone, laptop, parcel, calendar, envelope, clock, car, house, sandwich, coffee, takeoutbag, firstaid.
+
+Added for V07: ticket (blank lottery ticket), bigcheck (blank giant check), cereal, tvballs, speedboat, jetski, sportscar, yardsign (blank), sealenvelope, watch, wallcalendar, confetti, legalpad, funjar, envelopes.
 
 Props carry no text. Add labels in the edit.
 

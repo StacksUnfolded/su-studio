@@ -338,5 +338,40 @@
 "path": "props/wallet.png",
 "ar": 1.0316,
 "foot": 0.981
+},
+"D01": {
+"path": "cast/D01.png",
+"ar": 0.6134,
+"foot": 0.9904
+},
+"D02": {
+"path": "cast/D02.png",
+"ar": 0.7062,
+"foot": 0.9893
+},
+"D03": {
+"path": "cast/D03.png",
+"ar": 0.5685,
+"foot": 0.9904
+},
+"D04": {
+"path": "cast/D04.png",
+"ar": 0.5975,
+"foot": 0.9914
+},
+"C09": {
+"path": "cast/C09.png",
+"ar": 0.6157,
+"foot": 0.9873
+},
+"C10": {
+"path": "cast/C10.png",
+"ar": 0.7385,
+"foot": 0.9896
+},
+"C11": {
+"path": "cast/C11.png",
+"ar": 0.5899,
+"foot": 0.9897
 }
 }
