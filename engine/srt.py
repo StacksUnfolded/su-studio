@@ -13,7 +13,7 @@ words=json.load(open(V+'words.json'))
 d=Decoder(samprate=16000)
 # keep in step with align.py: same extra pronunciations, so word counts match words.json
 EXTRA={'influencer':'IH N F L UW AH N S ER','influencers':'IH N F L UW AH N S ER Z','merch':'M ER CH','hoodie':'HH UH D IY','hoodies':'HH UH D IY Z',
-       'glowsip':'G L OW S IH P','sneakier':'S N IY K IY ER',"app's":'AE P S','snugbox':'S N AH G B AA K S','vexo':'V EH K S OW'}
+       'glowsip':'G L OW S IH P','sneakier':'S N IY K IY ER',"app's":'AE P S','snugbox':'S N AH G B AA K S','vexo':'V EH K S OW','dez':'D EH Z',"excitement's":'IH K S AY T M AH N T S'}
 for _w,_p in EXTRA.items():
     if not d.lookup_word(_w): d.add_word(_w,_p,True)
 REP=[('DMs','d m s'),('DM','d m'),('FTC','f t c'),('CFPB','c f p b'),('TV','t v'),('APR','a p r'),('BNPL','b n p l'),('2025','twenty twenty five'),('IRS','i r s'),('LLC','l l c'),('US','u s')]

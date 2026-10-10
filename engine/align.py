@@ -7,7 +7,7 @@ def norm(t):
     return re.findall(r"[a-zA-Z']+",t.lower())
 # extra pronunciations (CMU phones) for words the default dictionary lacks
 EXTRA={'influencer':'IH N F L UW AH N S ER','influencers':'IH N F L UW AH N S ER Z','merch':'M ER CH','hoodie':'HH UH D IY','hoodies':'HH UH D IY Z',
-       'glowsip':'G L OW S IH P','sneakier':'S N IY K IY ER',"app's":'AE P S','snugbox':'S N AH G B AA K S','vexo':'V EH K S OW'}
+       'glowsip':'G L OW S IH P','sneakier':'S N IY K IY ER',"app's":'AE P S','snugbox':'S N AH G B AA K S','vexo':'V EH K S OW','dez':'D EH Z',"excitement's":'IH K S AY T M AH N T S'}
 res=[]
 import glob
 N=len(glob.glob('sec*.txt'))
