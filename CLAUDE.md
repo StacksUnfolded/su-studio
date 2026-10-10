@@ -27,6 +27,8 @@ Look at both stills (Read the jpgs). If they look right, the engine works.
 - **Voice:** ElevenLabs **Eleven v4**, voice `2nICQbZAqZdBaP1l1aiw`. Do **not** use ElevenLabs music or SFX. Use only `library/sfx` and `library/music`.
 - **Images:** rich "first style" at 1920×1080 or larger. Check every new image for clipping, anatomy, logos and text. Prefer the library: V04 needed zero new images.
 - **Thumbnails:** MrBeast or Odd1sOut style. Show what the video is about at a glance. Text must never cover the character.
+  - **House style (Fin's pick, 10 Oct 2026): the V04 "$1 | $1M" lightning split.** Bad state on one side (cold, dark, rain), good state on the other (warm glow, sparkles), the host in both with an obvious emotion, one big white Anton number per side with a thick black outline above the heads (red for the bad-news number), story props on each side.
+  - Build them with `engine/thumb_split.py thumbs/specs/<name>-split.json thumbs/out/<name>.png`. It uses library plates and poses (no image credits) and refuses to save if a number touches a face. `engine/thumb.py` (flat one-colour style) is kept as an alternative.
 - **Titles** come from outlier data (vidIQ), not guesses.
 - **Editing must be top notch:** pose swaps on word cues, SFX on every beat, no dead air, and no text collisions.
 - **Never handle API keys.** Never upload, publish or schedule anything on YouTube. Fin does that himself after approving.

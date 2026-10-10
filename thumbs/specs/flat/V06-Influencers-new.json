@@ -1,0 +1,55 @@
+{
+ "bg": "#B48CFF",
+ "host_x": 1400,
+ "back": [
+  {
+   "a": "shopbag",
+   "x": 1780,
+   "h": 320,
+   "bottom": 1080,
+   "rot": 8
+  }
+ ],
+ "actors": [
+  {
+   "a": "P13",
+   "x": 1400,
+   "top": 40,
+   "h": 1450
+  }
+ ],
+ "front": [
+  {
+   "a": "wallet",
+   "x": 1100,
+   "w": 330,
+   "bottom": 1100,
+   "rot": -10
+  }
+ ],
+ "text": [
+  [
+   "FAMOUS",
+   "#111315",
+   300
+  ],
+  [
+   "& BROKE",
+   "#ffffff",
+   260
+  ]
+ ],
+ "text_y": 70,
+ "text_w": 780,
+ "badges": [
+  {
+   "t": "1M FOLLOWERS",
+   "x": 80,
+   "y": 800,
+   "size": 90,
+   "bg": "#111315",
+   "col": "#ffffff",
+   "rot": -3
+  }
+ ]
+}
